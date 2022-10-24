@@ -1,0 +1,1358 @@
+/home/work/user-job-dir
+INFO:root:Using MoXing-v2.0.1.rc0.7ce21509-7ce21509
+INFO:root:Using OBS-Python-SDK-3.20.9.1
+[Modelarts Service Log]2022-07-27 15:13:09,786 - INFO - Ascend Driver: Version=21.0.2
+[Modelarts Service Log]2022-07-27 15:13:09,786 - INFO - you are advised to use ASCEND_DEVICE_ID env instead of DEVICE_ID, as the DEVICE_ID env will be discarded in later versions
+[Modelarts Service Log]2022-07-27 15:13:09,787 - INFO - particularly, ${ASCEND_DEVICE_ID} == ${DEVICE_ID}, it's the logical device id
+[Modelarts Service Log]2022-07-27 15:13:09,787 - INFO - Davinci training command
+[Modelarts Service Log]2022-07-27 15:13:09,787 - INFO - ['/usr/bin/python', '/home/work/user-job-dir/V0017/train.py', '--data_url=s3:///open-data/attachment/6/1/61d6268a-c272-4332-a26c-1beee9d0aaa761d6268a-c272-4332-a26c-1beee9d0aaa7/', '--train_url=s3:///open-data/job/zjute2022072520t010893457/output/V0017/', '--device_num=8', '--config=/cache/user-job-dir/V0017/src/configs/BiT_M_R152x4.yaml', '--run_modelarts=True', '--base_lr=0.00075', '--batch_size=16', '--device_target=Ascend']
+[Modelarts Service Log]2022-07-27 15:13:09,787 - INFO - Wait for Rank table file ready
+[Modelarts Service Log]2022-07-27 15:13:09,787 - INFO - Rank table file (K8S generated) is ready for read
+[Modelarts Service Log]2022-07-27 15:13:09,788 - INFO - 
+{
+    "status": "completed",
+    "group_count": "1",
+    "group_list": [
+        {
+            "group_name": "job-zjute2022072520t0108",
+            "device_count": "8",
+            "instance_count": "1",
+            "instance_list": [
+                {
+                    "pod_name": "job2ee09741-job-zjute2022072520t0108-0",
+                    "server_id": "192.168.25.113",
+                    "devices": [
+                        {
+                            "device_id": "0",
+                            "device_ip": "192.1.7.50"
+                        },
+                        {
+                            "device_id": "1",
+                            "device_ip": "192.2.206.140"
+                        },
+                        {
+                            "device_id": "2",
+                            "device_ip": "192.3.64.240"
+                        },
+                        {
+                            "device_id": "3",
+                            "device_ip": "192.4.18.157"
+                        },
+                        {
+                            "device_id": "4",
+                            "device_ip": "192.1.121.112"
+                        },
+                        {
+                            "device_id": "5",
+                            "device_ip": "192.2.165.107"
+                        },
+                        {
+                            "device_id": "6",
+                            "device_ip": "192.3.51.79"
+                        },
+                        {
+                            "device_id": "7",
+                            "device_ip": "192.4.193.226"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2022-07-27 15:13:09,788 - INFO - Rank table file (C7x)
+[Modelarts Service Log]2022-07-27 15:13:09,788 - INFO - 
+{
+    "status": "completed",
+    "version": "1.0",
+    "server_count": "1",
+    "server_list": [
+        {
+            "server_id": "192.168.25.113",
+            "device": [
+                {
+                    "device_id": "0",
+                    "device_ip": "192.1.7.50",
+                    "rank_id": "0"
+                },
+                {
+                    "device_id": "1",
+                    "device_ip": "192.2.206.140",
+                    "rank_id": "1"
+                },
+                {
+                    "device_id": "2",
+                    "device_ip": "192.3.64.240",
+                    "rank_id": "2"
+                },
+                {
+                    "device_id": "3",
+                    "device_ip": "192.4.18.157",
+                    "rank_id": "3"
+                },
+                {
+                    "device_id": "4",
+                    "device_ip": "192.1.121.112",
+                    "rank_id": "4"
+                },
+                {
+                    "device_id": "5",
+                    "device_ip": "192.2.165.107",
+                    "rank_id": "5"
+                },
+                {
+                    "device_id": "6",
+                    "device_ip": "192.3.51.79",
+                    "rank_id": "6"
+                },
+                {
+                    "device_id": "7",
+                    "device_ip": "192.4.193.226",
+                    "rank_id": "7"
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2022-07-27 15:13:09,789 - INFO - Rank table file (C7x) is generated
+[Modelarts Service Log]2022-07-27 15:13:09,789 - INFO - Current server
+[Modelarts Service Log]2022-07-27 15:13:09,789 - INFO - 
+{
+    "server_id": "192.168.25.113",
+    "device": [
+        {
+            "device_id": "0",
+            "device_ip": "192.1.7.50",
+            "rank_id": "0"
+        },
+        {
+            "device_id": "1",
+            "device_ip": "192.2.206.140",
+            "rank_id": "1"
+        },
+        {
+            "device_id": "2",
+            "device_ip": "192.3.64.240",
+            "rank_id": "2"
+        },
+        {
+            "device_id": "3",
+            "device_ip": "192.4.18.157",
+            "rank_id": "3"
+        },
+        {
+            "device_id": "4",
+            "device_ip": "192.1.121.112",
+            "rank_id": "4"
+        },
+        {
+            "device_id": "5",
+            "device_ip": "192.2.165.107",
+            "rank_id": "5"
+        },
+        {
+            "device_id": "6",
+            "device_ip": "192.3.51.79",
+            "rank_id": "6"
+        },
+        {
+            "device_id": "7",
+            "device_ip": "192.4.193.226",
+            "rank_id": "7"
+        }
+    ]
+}
+[Modelarts Service Log]2022-07-27 15:13:09,790 - INFO - bootstrap proc-rank-0-device-0
+[Modelarts Service Log]2022-07-27 15:13:09,800 - INFO - proc-rank-0-device-0 (pid: 301)
+[Modelarts Service Log]2022-07-27 15:13:09,808 - INFO - bootstrap proc-rank-1-device-1
+[Modelarts Service Log]2022-07-27 15:13:09,819 - INFO - proc-rank-1-device-1 (pid: 303)
+[Modelarts Service Log]2022-07-27 15:13:09,830 - INFO - bootstrap proc-rank-2-device-2
+[Modelarts Service Log]2022-07-27 15:13:09,841 - INFO - proc-rank-2-device-2 (pid: 305)
+[Modelarts Service Log]2022-07-27 15:13:09,851 - INFO - bootstrap proc-rank-3-device-3
+[Modelarts Service Log]2022-07-27 15:13:09,862 - INFO - proc-rank-3-device-3 (pid: 307)
+[Modelarts Service Log]2022-07-27 15:13:09,872 - INFO - bootstrap proc-rank-4-device-4
+[Modelarts Service Log]2022-07-27 15:13:09,878 - INFO - proc-rank-4-device-4 (pid: 309)
+[Modelarts Service Log]2022-07-27 15:13:09,887 - INFO - bootstrap proc-rank-5-device-5
+[Modelarts Service Log]2022-07-27 15:13:09,894 - INFO - proc-rank-5-device-5 (pid: 374)
+[Modelarts Service Log]2022-07-27 15:13:09,898 - INFO - bootstrap proc-rank-6-device-6
+[Modelarts Service Log]2022-07-27 15:13:09,904 - INFO - proc-rank-6-device-6 (pid: 382)
+[Modelarts Service Log]2022-07-27 15:13:09,909 - INFO - bootstrap proc-rank-7-device-7
+[Modelarts Service Log]2022-07-27 15:13:09,915 - INFO - proc-rank-7-device-7 (pid: 441)
+=> Reading YAML config from /cache/user-job-dir/V0017/src/configs/BiT_M_R152x4.yaml
+Namespace(accumulation_step=1, amp_level='O1', arch='BiT_M_R152x4', auto_augment='None', base_lr=0.00075, batch_size=16, beta=[0.9, 0.999], clip_global_norm_value=5.0, config='/cache/user-job-dir/V0017/src/configs/BiT_M_R152x4.yaml', cooldown_epochs=0, crop_pct=0.9, cutmix=0.0, data_url='s3:///open-data/attachment/6/1/61d6268a-c272-4332-a26c-1beee9d0aaa761d6268a-c272-4332-a26c-1beee9d0aaa7/', device_id=0, device_num=8, device_target='Ascend', drop_path_rate=0.0, ema_decay=0.9999, epochs=28, eps=1e-08, file_format='MINDIR', image_size=128, in_chans=3, interpolation='bilinear', is_dynamic_loss_scale=True, keep_checkpoint_max=20, label_smoothing=0.0, loss_scale=1024, lr_adjust=30, lr_gamma=0.97, lr_scheduler='multistep_lr', min_lr=1e-07, mix_up=0.1, mixup_mode='batch', mixup_prob=1.0, mlp_ratio=4.0, momentum=0.9, num_classes=10, num_parallel_workers=16, optimizer='momentum', pretrained='s3://open-data/pretrained/BiT-M-R152x4.ckpt', re_count=1, re_mode='pixel', re_prob=0.0, run_modelarts=True, run_openai=False, save_every=2, seed=0, set='CIFAR10', start_epoch=0, switch_prob=0.0, train_url='s3:///open-data/job/zjute2022072520t010893457/output/V0017/', warmup_length=0, warmup_lr=1e-07, weight_decay=0.0, with_ema=False)
+=> Reading YAML config from /cache/user-job-dir/V0017/src/configs/BiT_M_R152x4.yaml
+Namespace(accumulation_step=1, amp_level='O1', arch='BiT_M_R152x4', auto_augment='None', base_lr=0.00075, batch_size=16, beta=[0.9, 0.999], clip_global_norm_value=5.0, config='/cache/user-job-dir/V0017/src/configs/BiT_M_R152x4.yaml', cooldown_epochs=0, crop_pct=0.9, cutmix=0.0, data_url='s3:///open-data/attachment/6/1/61d6268a-c272-4332-a26c-1beee9d0aaa761d6268a-c272-4332-a26c-1beee9d0aaa7/', device_id=0, device_num=8, device_target='Ascend', drop_path_rate=0.0, ema_decay=0.9999, epochs=28, eps=1e-08, file_format='MINDIR', image_size=128, in_chans=3, interpolation='bilinear', is_dynamic_loss_scale=True, keep_checkpoint_max=20, label_smoothing=0.0, loss_scale=1024, lr_adjust=30, lr_gamma=0.97, lr_scheduler='multistep_lr', min_lr=1e-07, mix_up=0.1, mixup_mode='batch', mixup_prob=1.0, mlp_ratio=4.0, momentum=0.9, num_classes=10, num_parallel_workers=16, optimizer='momentum', pretrained='s3://open-data/pretrained/BiT-M-R152x4.ckpt', re_count=1, re_mode='pixel', re_prob=0.0, run_modelarts=True, run_openai=False, save_every=2, seed=0, set='CIFAR10', start_epoch=0, switch_prob=0.0, train_url='s3:///open-data/job/zjute2022072520t010893457/output/V0017/', warmup_length=0, warmup_lr=1e-07, weight_decay=0.0, with_ema=False)
+=> Reading YAML config from /cache/user-job-dir/V0017/src/configs/BiT_M_R152x4.yaml
+Namespace(accumulation_step=1, amp_level='O1', arch='BiT_M_R152x4', auto_augment='None', base_lr=0.00075, batch_size=16, beta=[0.9, 0.999], clip_global_norm_value=5.0, config='/cache/user-job-dir/V0017/src/configs/BiT_M_R152x4.yaml', cooldown_epochs=0, crop_pct=0.9, cutmix=0.0, data_url='s3:///open-data/attachment/6/1/61d6268a-c272-4332-a26c-1beee9d0aaa761d6268a-c272-4332-a26c-1beee9d0aaa7/', device_id=0, device_num=8, device_target='Ascend', drop_path_rate=0.0, ema_decay=0.9999, epochs=28, eps=1e-08, file_format='MINDIR', image_size=128, in_chans=3, interpolation='bilinear', is_dynamic_loss_scale=True, keep_checkpoint_max=20, label_smoothing=0.0, loss_scale=1024, lr_adjust=30, lr_gamma=0.97, lr_scheduler='multistep_lr', min_lr=1e-07, mix_up=0.1, mixup_mode='batch', mixup_prob=1.0, mlp_ratio=4.0, momentum=0.9, num_classes=10, num_parallel_workers=16, optimizer='momentum', pretrained='s3://open-data/pretrained/BiT-M-R152x4.ckpt', re_count=1, re_mode='pixel', re_prob=0.0, run_modelarts=True, run_openai=False, save_every=2, seed=0, set='CIFAR10', start_epoch=0, switch_prob=0.0, train_url='s3:///open-data/job/zjute2022072520t010893457/output/V0017/', warmup_length=0, warmup_lr=1e-07, weight_decay=0.0, with_ema=False)
+=> Reading YAML config from /cache/user-job-dir/V0017/src/configs/BiT_M_R152x4.yaml
+Namespace(accumulation_step=1, amp_level='O1', arch='BiT_M_R152x4', auto_augment='None', base_lr=0.00075, batch_size=16, beta=[0.9, 0.999], clip_global_norm_value=5.0, config='/cache/user-job-dir/V0017/src/configs/BiT_M_R152x4.yaml', cooldown_epochs=0, crop_pct=0.9, cutmix=0.0, data_url='s3:///open-data/attachment/6/1/61d6268a-c272-4332-a26c-1beee9d0aaa761d6268a-c272-4332-a26c-1beee9d0aaa7/', device_id=0, device_num=8, device_target='Ascend', drop_path_rate=0.0, ema_decay=0.9999, epochs=28, eps=1e-08, file_format='MINDIR', image_size=128, in_chans=3, interpolation='bilinear', is_dynamic_loss_scale=True, keep_checkpoint_max=20, label_smoothing=0.0, loss_scale=1024, lr_adjust=30, lr_gamma=0.97, lr_scheduler='multistep_lr', min_lr=1e-07, mix_up=0.1, mixup_mode='batch', mixup_prob=1.0, mlp_ratio=4.0, momentum=0.9, num_classes=10, num_parallel_workers=16, optimizer='momentum', pretrained='s3://open-data/pretrained/BiT-M-R152x4.ckpt', re_count=1, re_mode='pixel', re_prob=0.0, run_modelarts=True, run_openai=False, save_every=2, seed=0, set='CIFAR10', start_epoch=0, switch_prob=0.0, train_url='s3:///open-data/job/zjute2022072520t010893457/output/V0017/', warmup_length=0, warmup_lr=1e-07, weight_decay=0.0, with_ema=False)
+=> Reading YAML config from /cache/user-job-dir/V0017/src/configs/BiT_M_R152x4.yaml
+Namespace(accumulation_step=1, amp_level='O1', arch='BiT_M_R152x4', auto_augment='None', base_lr=0.00075, batch_size=16, beta=[0.9, 0.999], clip_global_norm_value=5.0, config='/cache/user-job-dir/V0017/src/configs/BiT_M_R152x4.yaml', cooldown_epochs=0, crop_pct=0.9, cutmix=0.0, data_url='s3:///open-data/attachment/6/1/61d6268a-c272-4332-a26c-1beee9d0aaa761d6268a-c272-4332-a26c-1beee9d0aaa7/', device_id=0, device_num=8, device_target='Ascend', drop_path_rate=0.0, ema_decay=0.9999, epochs=28, eps=1e-08, file_format='MINDIR', image_size=128, in_chans=3, interpolation='bilinear', is_dynamic_loss_scale=True, keep_checkpoint_max=20, label_smoothing=0.0, loss_scale=1024, lr_adjust=30, lr_gamma=0.97, lr_scheduler='multistep_lr', min_lr=1e-07, mix_up=0.1, mixup_mode='batch', mixup_prob=1.0, mlp_ratio=4.0, momentum=0.9, num_classes=10, num_parallel_workers=16, optimizer='momentum', pretrained='s3://open-data/pretrained/BiT-M-R152x4.ckpt', re_count=1, re_mode='pixel', re_prob=0.0, run_modelarts=True, run_openai=False, save_every=2, seed=0, set='CIFAR10', start_epoch=0, switch_prob=0.0, train_url='s3:///open-data/job/zjute2022072520t010893457/output/V0017/', warmup_length=0, warmup_lr=1e-07, weight_decay=0.0, with_ema=False)
+[WARNING] ME(303:281473020104720,MainProcess):2022-07-27-15:13:17.431.998 [mindspore/context.py:860]  'enable_auto_mixed_precision' parameters will be deprecated.For details, please see the interface parameter API comments
+[WARNING] ME(307:281473468252176,MainProcess):2022-07-27-15:13:17.432.624 [mindspore/context.py:860]  'enable_auto_mixed_precision' parameters will be deprecated.For details, please see the interface parameter API comments
+[WARNING] ME(309:281473485295632,MainProcess):2022-07-27-15:13:17.432.776 [mindspore/context.py:860]  'enable_auto_mixed_precision' parameters will be deprecated.For details, please see the interface parameter API comments
+[WARNING] ME(374:281473093726224,MainProcess):2022-07-27-15:13:17.436.089 [mindspore/context.py:860]  'enable_auto_mixed_precision' parameters will be deprecated.For details, please see the interface parameter API comments
+[WARNING] ME(441:281472892571664,MainProcess):2022-07-27-15:13:17.440.542 [mindspore/context.py:860]  'enable_auto_mixed_precision' parameters will be deprecated.For details, please see the interface parameter API comments
+=> Reading YAML config from /cache/user-job-dir/V0017/src/configs/BiT_M_R152x4.yaml
+Namespace(accumulation_step=1, amp_level='O1', arch='BiT_M_R152x4', auto_augment='None', base_lr=0.00075, batch_size=16, beta=[0.9, 0.999], clip_global_norm_value=5.0, config='/cache/user-job-dir/V0017/src/configs/BiT_M_R152x4.yaml', cooldown_epochs=0, crop_pct=0.9, cutmix=0.0, data_url='s3:///open-data/attachment/6/1/61d6268a-c272-4332-a26c-1beee9d0aaa761d6268a-c272-4332-a26c-1beee9d0aaa7/', device_id=0, device_num=8, device_target='Ascend', drop_path_rate=0.0, ema_decay=0.9999, epochs=28, eps=1e-08, file_format='MINDIR', image_size=128, in_chans=3, interpolation='bilinear', is_dynamic_loss_scale=True, keep_checkpoint_max=20, label_smoothing=0.0, loss_scale=1024, lr_adjust=30, lr_gamma=0.97, lr_scheduler='multistep_lr', min_lr=1e-07, mix_up=0.1, mixup_mode='batch', mixup_prob=1.0, mlp_ratio=4.0, momentum=0.9, num_classes=10, num_parallel_workers=16, optimizer='momentum', pretrained='s3://open-data/pretrained/BiT-M-R152x4.ckpt', re_count=1, re_mode='pixel', re_prob=0.0, run_modelarts=True, run_openai=False, save_every=2, seed=0, set='CIFAR10', start_epoch=0, switch_prob=0.0, train_url='s3:///open-data/job/zjute2022072520t010893457/output/V0017/', warmup_length=0, warmup_lr=1e-07, weight_decay=0.0, with_ema=False)
+=> Reading YAML config from /cache/user-job-dir/V0017/src/configs/BiT_M_R152x4.yaml
+Namespace(accumulation_step=1, amp_level='O1', arch='BiT_M_R152x4', auto_augment='None', base_lr=0.00075, batch_size=16, beta=[0.9, 0.999], clip_global_norm_value=5.0, config='/cache/user-job-dir/V0017/src/configs/BiT_M_R152x4.yaml', cooldown_epochs=0, crop_pct=0.9, cutmix=0.0, data_url='s3:///open-data/attachment/6/1/61d6268a-c272-4332-a26c-1beee9d0aaa761d6268a-c272-4332-a26c-1beee9d0aaa7/', device_id=0, device_num=8, device_target='Ascend', drop_path_rate=0.0, ema_decay=0.9999, epochs=28, eps=1e-08, file_format='MINDIR', image_size=128, in_chans=3, interpolation='bilinear', is_dynamic_loss_scale=True, keep_checkpoint_max=20, label_smoothing=0.0, loss_scale=1024, lr_adjust=30, lr_gamma=0.97, lr_scheduler='multistep_lr', min_lr=1e-07, mix_up=0.1, mixup_mode='batch', mixup_prob=1.0, mlp_ratio=4.0, momentum=0.9, num_classes=10, num_parallel_workers=16, optimizer='momentum', pretrained='s3://open-data/pretrained/BiT-M-R152x4.ckpt', re_count=1, re_mode='pixel', re_prob=0.0, run_modelarts=True, run_openai=False, save_every=2, seed=0, set='CIFAR10', start_epoch=0, switch_prob=0.0, train_url='s3:///open-data/job/zjute2022072520t010893457/output/V0017/', warmup_length=0, warmup_lr=1e-07, weight_decay=0.0, with_ema=False)
+[WARNING] ME(382:281473176809488,MainProcess):2022-07-27-15:13:17.483.599 [mindspore/context.py:860]  'enable_auto_mixed_precision' parameters will be deprecated.For details, please see the interface parameter API comments
+[WARNING] ME(305:281473320308752,MainProcess):2022-07-27-15:13:17.495.207 [mindspore/context.py:860]  'enable_auto_mixed_precision' parameters will be deprecated.For details, please see the interface parameter API comments
+=> Reading YAML config from /cache/user-job-dir/V0017/src/configs/BiT_M_R152x4.yaml
+Namespace(accumulation_step=1, amp_level='O1', arch='BiT_M_R152x4', auto_augment='None', base_lr=0.00075, batch_size=16, beta=[0.9, 0.999], clip_global_norm_value=5.0, config='/cache/user-job-dir/V0017/src/configs/BiT_M_R152x4.yaml', cooldown_epochs=0, crop_pct=0.9, cutmix=0.0, data_url='s3:///open-data/attachment/6/1/61d6268a-c272-4332-a26c-1beee9d0aaa761d6268a-c272-4332-a26c-1beee9d0aaa7/', device_id=0, device_num=8, device_target='Ascend', drop_path_rate=0.0, ema_decay=0.9999, epochs=28, eps=1e-08, file_format='MINDIR', image_size=128, in_chans=3, interpolation='bilinear', is_dynamic_loss_scale=True, keep_checkpoint_max=20, label_smoothing=0.0, loss_scale=1024, lr_adjust=30, lr_gamma=0.97, lr_scheduler='multistep_lr', min_lr=1e-07, mix_up=0.1, mixup_mode='batch', mixup_prob=1.0, mlp_ratio=4.0, momentum=0.9, num_classes=10, num_parallel_workers=16, optimizer='momentum', pretrained='s3://open-data/pretrained/BiT-M-R152x4.ckpt', re_count=1, re_mode='pixel', re_prob=0.0, run_modelarts=True, run_openai=False, save_every=2, seed=0, set='CIFAR10', start_epoch=0, switch_prob=0.0, train_url='s3:///open-data/job/zjute2022072520t010893457/output/V0017/', warmup_length=0, warmup_lr=1e-07, weight_decay=0.0, with_ema=False)
+[WARNING] ME(301:281473805955088,MainProcess):2022-07-27-15:13:17.576.815 [mindspore/context.py:860]  'enable_auto_mixed_precision' parameters will be deprecated.For details, please see the interface parameter API comments
+==> Creating model 'BiT_M_R152x4'
+==> Creating model 'BiT_M_R152x4'
+==> Creating model 'BiT_M_R152x4'
+==> Creating model 'BiT_M_R152x4'
+==> Creating model 'BiT_M_R152x4'
+==> Creating model 'BiT_M_R152x4'
+==> Creating model 'BiT_M_R152x4'
+==> Creating model 'BiT_M_R152x4'
+=> using amp_level O1
+=========================Using MixBatch=========================
+Syncing data.
+=> using amp_level O1
+=========================Using MixBatch=========================
+Syncing data.
+from path:  s3://open-data/pretrained
+to path:  /cache/weight
+=> using amp_level O1
+=========================Using MixBatch=========================
+Syncing data.
+=> using amp_level O1
+=========================Using MixBatch=========================
+Syncing data.
+=> using amp_level O1
+=========================Using MixBatch=========================
+Syncing data.
+=> using amp_level O1
+=========================Using MixBatch=========================
+Syncing data.
+=> using amp_level O1
+=========================Using MixBatch=========================
+Syncing data.
+=> using amp_level O1
+=========================Using MixBatch=========================
+Syncing data.
+===finish data synchronization===
+===save flag===
+Finish sync data from s3://open-data/pretrained to /cache/weight.
+=> loading pretrained weights from '/cache/weight/BiT-M-R152x4.ckpt'
+Finish sync data from s3://open-data/pretrained to /cache/weight.
+=> loading pretrained weights from '/cache/weight/BiT-M-R152x4.ckpt'
+Finish sync data from s3://open-data/pretrained to /cache/weight.
+=> loading pretrained weights from '/cache/weight/BiT-M-R152x4.ckpt'
+Finish sync data from s3://open-data/pretrained to /cache/weight.
+=> loading pretrained weights from '/cache/weight/BiT-M-R152x4.ckpt'
+Finish sync data from s3://open-data/pretrained to /cache/weight.
+=> loading pretrained weights from '/cache/weight/BiT-M-R152x4.ckpt'
+Finish sync data from s3://open-data/pretrained to /cache/weight.
+=> loading pretrained weights from '/cache/weight/BiT-M-R152x4.ckpt'
+Finish sync data from s3://open-data/pretrained to /cache/weight.
+=> loading pretrained weights from '/cache/weight/BiT-M-R152x4.ckpt'
+Finish sync data from s3://open-data/pretrained to /cache/weight.
+=> loading pretrained weights from '/cache/weight/BiT-M-R152x4.ckpt'
+[WARNING] ME(307:281473468252176,MainProcess):2022-07-27-15:14:47.938.050 [mindspore/train/serialization.py:634] 2 parameters in the 'net' are not loaded, because they are not in the 'parameter_dict'.
+[WARNING] ME(307:281473468252176,MainProcess):2022-07-27-15:14:47.938.904 [mindspore/train/serialization.py:636] model.head.conv.weight is not loaded.
+[WARNING] ME(307:281473468252176,MainProcess):2022-07-27-15:14:47.939.009 [mindspore/train/serialization.py:636] model.head.conv.bias is not loaded.
+=> Getting CIFAR10 dataset
+Download data.
+[WARNING] ME(441:281472892571664,MainProcess):2022-07-27-15:14:48.305.631 [mindspore/train/serialization.py:634] 2 parameters in the 'net' are not loaded, because they are not in the 'parameter_dict'.
+[WARNING] ME(441:281472892571664,MainProcess):2022-07-27-15:14:48.306.421 [mindspore/train/serialization.py:636] model.head.conv.weight is not loaded.
+[WARNING] ME(441:281472892571664,MainProcess):2022-07-27-15:14:48.306.555 [mindspore/train/serialization.py:636] model.head.conv.bias is not loaded.
+=> Getting CIFAR10 dataset
+Download data.
+[WARNING] ME(374:281473093726224,MainProcess):2022-07-27-15:14:48.911.909 [mindspore/train/serialization.py:634] 2 parameters in the 'net' are not loaded, because they are not in the 'parameter_dict'.
+[WARNING] ME(374:281473093726224,MainProcess):2022-07-27-15:14:48.912.492 [mindspore/train/serialization.py:636] model.head.conv.weight is not loaded.
+[WARNING] ME(374:281473093726224,MainProcess):2022-07-27-15:14:48.912.589 [mindspore/train/serialization.py:636] model.head.conv.bias is not loaded.
+[WARNING] ME(301:281473805955088,MainProcess):2022-07-27-15:14:49.315.92 [mindspore/train/serialization.py:634] 2 parameters in the 'net' are not loaded, because they are not in the 'parameter_dict'.
+[WARNING] ME(301:281473805955088,MainProcess):2022-07-27-15:14:49.329.90 [mindspore/train/serialization.py:636] model.head.conv.weight is not loaded.
+[WARNING] ME(301:281473805955088,MainProcess):2022-07-27-15:14:49.330.93 [mindspore/train/serialization.py:636] model.head.conv.bias is not loaded.
+[WARNING] ME(305:281473320308752,MainProcess):2022-07-27-15:14:49.219.613 [mindspore/train/serialization.py:634] 2 parameters in the 'net' are not loaded, because they are not in the 'parameter_dict'.
+[WARNING] ME(305:281473320308752,MainProcess):2022-07-27-15:14:49.220.128 [mindspore/train/serialization.py:636] model.head.conv.weight is not loaded.
+[WARNING] ME(305:281473320308752,MainProcess):2022-07-27-15:14:49.220.227 [mindspore/train/serialization.py:636] model.head.conv.bias is not loaded.
+=> Getting CIFAR10 dataset
+Download data.
+[WARNING] ME(382:281473176809488,MainProcess):2022-07-27-15:14:49.280.878 [mindspore/train/serialization.py:634] 2 parameters in the 'net' are not loaded, because they are not in the 'parameter_dict'.
+[WARNING] ME(382:281473176809488,MainProcess):2022-07-27-15:14:49.281.581 [mindspore/train/serialization.py:636] model.head.conv.weight is not loaded.
+[WARNING] ME(382:281473176809488,MainProcess):2022-07-27-15:14:49.281.714 [mindspore/train/serialization.py:636] model.head.conv.bias is not loaded.
+=> Getting CIFAR10 dataset
+Download data.
+from path:  s3:///open-data/attachment/6/1/61d6268a-c272-4332-a26c-1beee9d0aaa761d6268a-c272-4332-a26c-1beee9d0aaa7/
+to path:  /cache/data
+=> Getting CIFAR10 dataset
+Download data.
+=> Getting CIFAR10 dataset
+Download data.
+[WARNING] ME(309:281473485295632,MainProcess):2022-07-27-15:14:50.402.935 [mindspore/train/serialization.py:634] 2 parameters in the 'net' are not loaded, because they are not in the 'parameter_dict'.
+[WARNING] ME(309:281473485295632,MainProcess):2022-07-27-15:14:50.403.526 [mindspore/train/serialization.py:636] model.head.conv.weight is not loaded.
+[WARNING] ME(309:281473485295632,MainProcess):2022-07-27-15:14:50.403.626 [mindspore/train/serialization.py:636] model.head.conv.bias is not loaded.
+=> Getting CIFAR10 dataset
+Download data.
+===finish data synchronization===
+===save flag===
+Finish sync data from s3:///open-data/attachment/6/1/61d6268a-c272-4332-a26c-1beee9d0aaa761d6268a-c272-4332-a26c-1beee9d0aaa7/ to /cache/data.
+Create train and evaluate dataset.
+local_data_path: ['train', 'val']
+=> When using train_wrapper, using optimizer momentum
+=> Get LR from epoch: 0
+=> Start step: 0
+=> Total step: 10920
+=> Accumulation step:1
+=> Max learning_rate: 0.00075
+=> Accumulate BatchSize: 128
+Finish sync data from s3:///open-data/attachment/6/1/61d6268a-c272-4332-a26c-1beee9d0aaa761d6268a-c272-4332-a26c-1beee9d0aaa7/ to /cache/data.
+Create train and evaluate dataset.
+local_data_path: ['train', 'val']
+=> When using train_wrapper, using optimizer momentum
+=> Get LR from epoch: 0
+=> Start step: 0
+=> Total step: 10920
+=> Accumulation step:1
+=> Max learning_rate: 0.00075
+=> Accumulate BatchSize: 128
+Finish sync data from s3:///open-data/attachment/6/1/61d6268a-c272-4332-a26c-1beee9d0aaa761d6268a-c272-4332-a26c-1beee9d0aaa7/ to /cache/data.
+Create train and evaluate dataset.
+local_data_path: ['train', 'val']
+=> When using train_wrapper, using optimizer momentum
+=> Get LR from epoch: 0
+=> Start step: 0
+=> Total step: 10920
+=> Accumulation step:1
+=> Max learning_rate: 0.00075
+=> Accumulate BatchSize: 128
+Finish sync data from s3:///open-data/attachment/6/1/61d6268a-c272-4332-a26c-1beee9d0aaa761d6268a-c272-4332-a26c-1beee9d0aaa7/ to /cache/data.
+Create train and evaluate dataset.
+local_data_path: ['train', 'val']
+=> When using train_wrapper, using optimizer momentum
+=> Get LR from epoch: 0
+=> Start step: 0
+=> Total step: 10920
+=> Accumulation step:1
+=> Max learning_rate: 0.00075
+=> Accumulate BatchSize: 128
+Finish sync data from s3:///open-data/attachment/6/1/61d6268a-c272-4332-a26c-1beee9d0aaa761d6268a-c272-4332-a26c-1beee9d0aaa7/ to /cache/data.
+Create train and evaluate dataset.
+local_data_path: ['train', 'val']
+=> When using train_wrapper, using optimizer momentum
+=> Get LR from epoch: 0
+=> Start step: 0
+=> Total step: 10920
+=> Accumulation step:1
+=> Max learning_rate: 0.00075
+=> Accumulate BatchSize: 128
+Finish sync data from s3:///open-data/attachment/6/1/61d6268a-c272-4332-a26c-1beee9d0aaa761d6268a-c272-4332-a26c-1beee9d0aaa7/ to /cache/data.
+Create train and evaluate dataset.
+local_data_path: ['train', 'val']
+=> When using train_wrapper, using optimizer momentum
+=> Get LR from epoch: 0
+=> Start step: 0
+=> Total step: 10920
+=> Accumulation step:1
+=> Max learning_rate: 0.00075
+=> Accumulate BatchSize: 128
+Finish sync data from s3:///open-data/attachment/6/1/61d6268a-c272-4332-a26c-1beee9d0aaa761d6268a-c272-4332-a26c-1beee9d0aaa7/ to /cache/data.
+Create train and evaluate dataset.
+local_data_path: ['train', 'val']
+=> When using train_wrapper, using optimizer momentum
+=> Get LR from epoch: 0
+=> Start step: 0
+=> Total step: 10920
+=> Accumulation step:1
+=> Max learning_rate: 0.00075
+=> Accumulate BatchSize: 128
+[WARNING] ME(303:281473020104720,MainProcess):2022-07-27-15:14:59.272.486 [mindspore/train/serialization.py:634] 2 parameters in the 'net' are not loaded, because they are not in the 'parameter_dict'.
+[WARNING] ME(303:281473020104720,MainProcess):2022-07-27-15:14:59.273.106 [mindspore/train/serialization.py:636] model.head.conv.weight is not loaded.
+[WARNING] ME(303:281473020104720,MainProcess):2022-07-27-15:14:59.273.210 [mindspore/train/serialization.py:636] model.head.conv.bias is not loaded.
+=> Using DynamicLossScaleUpdateCell
+begin train 28 epochs
+set_mempolicy: Operation not permitted
+=> Getting CIFAR10 dataset
+Download data.
+Finish sync data from s3:///open-data/attachment/6/1/61d6268a-c272-4332-a26c-1beee9d0aaa761d6268a-c272-4332-a26c-1beee9d0aaa7/ to /cache/data.
+Create train and evaluate dataset.
+local_data_path: ['train', 'val']
+=> When using train_wrapper, using optimizer momentum
+=> Get LR from epoch: 0
+=> Start step: 0
+=> Total step: 10920
+=> Accumulation step:1
+=> Max learning_rate: 0.00075
+=> Accumulate BatchSize: 128
+=> Using DynamicLossScaleUpdateCell
+begin train 28 epochs
+set_mempolicy: Operation not permitted
+=> Using DynamicLossScaleUpdateCell
+begin train 28 epochs
+=> Using DynamicLossScaleUpdateCell
+set_mempolicy: Operation not permitted
+begin train 28 epochs
+set_mempolicy: Operation not permitted
+=> Using DynamicLossScaleUpdateCell
+begin train 28 epochs
+set_mempolicy: Operation not permitted
+=> Using DynamicLossScaleUpdateCell
+begin train 28 epochs
+set_mempolicy: Operation not permitted
+=> Using DynamicLossScaleUpdateCell
+begin train 28 epochs
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+=> Using DynamicLossScaleUpdateCell
+begin train 28 epochs
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+[WARNING] CORE(301,ffffba37b010,python):2022-07-27-15:16:24.269.742 [mindspore/core/ir/anf_extends.cc:66] fullname_with_scope] Input 0 of cnode is not a value node, its type is CNode.
+[WARNING] CORE(307,ffffa616c010,python):2022-07-27-15:16:24.348.222 [mindspore/core/ir/anf_extends.cc:66] fullname_with_scope] Input 0 of cnode is not a value node, its type is CNode.
+[WARNING] CORE(309,ffffa71ad010,python):2022-07-27-15:16:26.835.885 [mindspore/core/ir/anf_extends.cc:66] fullname_with_scope] Input 0 of cnode is not a value node, its type is CNode.
+[WARNING] CORE(382,ffff94b7b010,python):2022-07-27-15:16:27.049.985 [mindspore/core/ir/anf_extends.cc:66] fullname_with_scope] Input 0 of cnode is not a value node, its type is CNode.
+[WARNING] CORE(441,ffff83c69010,python):2022-07-27-15:16:28.520.993 [mindspore/core/ir/anf_extends.cc:66] fullname_with_scope] Input 0 of cnode is not a value node, its type is CNode.
+[WARNING] CORE(305,ffff9d455010,python):2022-07-27-15:16:28.927.161 [mindspore/core/ir/anf_extends.cc:66] fullname_with_scope] Input 0 of cnode is not a value node, its type is CNode.
+[WARNING] CORE(374,ffff8fc3f010,python):2022-07-27-15:16:29.300.413 [mindspore/core/ir/anf_extends.cc:66] fullname_with_scope] Input 0 of cnode is not a value node, its type is CNode.
+[WARNING] CORE(303,ffff8b609010,python):2022-07-27-15:16:37.443.905 [mindspore/core/ir/anf_extends.cc:66] fullname_with_scope] Input 0 of cnode is not a value node, its type is CNode.
+[WARNING] DEVICE(307,ffffa616c010,python):2022-07-27-15:17:33.002.797 [mindspore/ccsrc/runtime/hardware/ascend/ascend_graph_optimization.cc:255] SelectKernel] There are 156 node/nodes used raise precision to selected the kernel!
+[WARNING] DEVICE(305,ffff9d455010,python):2022-07-27-15:17:33.150.255 [mindspore/ccsrc/runtime/hardware/ascend/ascend_graph_optimization.cc:255] SelectKernel] There are 156 node/nodes used raise precision to selected the kernel!
+[WARNING] DEVICE(301,ffffba37b010,python):2022-07-27-15:17:33.182.514 [mindspore/ccsrc/runtime/hardware/ascend/ascend_graph_optimization.cc:255] SelectKernel] There are 156 node/nodes used raise precision to selected the kernel!
+[WARNING] DEVICE(309,ffffa71ad010,python):2022-07-27-15:17:33.261.447 [mindspore/ccsrc/runtime/hardware/ascend/ascend_graph_optimization.cc:255] SelectKernel] There are 156 node/nodes used raise precision to selected the kernel!
+[WARNING] DEVICE(382,ffff94b7b010,python):2022-07-27-15:17:36.080.280 [mindspore/ccsrc/runtime/hardware/ascend/ascend_graph_optimization.cc:255] SelectKernel] There are 156 node/nodes used raise precision to selected the kernel!
+[WARNING] DEVICE(441,ffff83c69010,python):2022-07-27-15:17:36.503.432 [mindspore/ccsrc/runtime/hardware/ascend/ascend_graph_optimization.cc:255] SelectKernel] There are 156 node/nodes used raise precision to selected the kernel!
+[WARNING] DEVICE(374,ffff8fc3f010,python):2022-07-27-15:17:38.948.458 [mindspore/ccsrc/runtime/hardware/ascend/ascend_graph_optimization.cc:255] SelectKernel] There are 156 node/nodes used raise precision to selected the kernel!
+[WARNING] DEVICE(303,ffff8b609010,python):2022-07-27-15:17:41.434.866 [mindspore/ccsrc/runtime/hardware/ascend/ascend_graph_optimization.cc:255] SelectKernel] There are 156 node/nodes used raise precision to selected the kernel!
+epoch: 1 step: 390, loss is 0.4384058713912964
+epoch time: 728760.203 ms, per step time: 1868.616 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 1 step: 390, loss is 0.048872873187065125
+epoch time: 729705.211 ms, per step time: 1871.039 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 1 step: 390, loss is 0.28322604298591614
+epoch time: 731481.385 ms, per step time: 1875.593 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 1 step: 390, loss is 0.07494065165519714
+epoch time: 728205.595 ms, per step time: 1867.194 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 1 step: 390, loss is 0.052477359771728516
+epoch time: 732961.764 ms, per step time: 1879.389 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 1 step: 390, loss is 0.08442366123199463
+epoch time: 745138.618 ms, per step time: 1910.612 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 1 step: 390, loss is 0.19072939455509186
+epoch time: 746269.974 ms, per step time: 1913.513 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 1 step: 390, loss is 1.259514331817627
+epoch time: 749032.265 ms, per step time: 1920.596 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 1 acc: 0.9783, best acc is 0.9783
+epoch: 1 acc: 0.9783, best acc is 0.9783
+epoch: 1 acc: 0.9783, best acc is 0.9783
+epoch: 1 acc: 0.9783, best acc is 0.9783
+epoch: 1 acc: 0.9783, best acc is 0.9783
+epoch: 1 acc: 0.9783, best acc is 0.9783
+epoch: 1 acc: 0.9783, best acc is 0.9783
+epoch: 1 acc: 0.9783, best acc is 0.9783
+epoch: 2 step: 390, loss is 1.0366138219833374
+epoch time: 298616.488 ms, per step time: 765.683 ms
+epoch: 2 step: 390, loss is 0.0359947606921196
+epoch time: 297671.186 ms, per step time: 763.259 ms
+epoch: 2 step: 390, loss is 1.1620128154754639
+epoch time: 295827.417 ms, per step time: 758.532 ms
+epoch: 2 step: 390, loss is 0.05048230290412903
+epoch time: 304678.531 ms, per step time: 781.227 ms
+epoch: 2 step: 390, loss is 1.0516252517700195
+epoch time: 317972.902 ms, per step time: 815.315 ms
+epoch: 2 step: 390, loss is 0.07719213515520096
+epoch time: 315817.320 ms, per step time: 809.788 ms
+epoch: 2 step: 390, loss is 0.09816960990428925
+epoch time: 331609.697 ms, per step time: 850.281 ms
+epoch: 2 step: 390, loss is 1.2500669956207275
+epoch time: 332858.914 ms, per step time: 853.484 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 2 acc: 0.9822, best acc is 0.9822
+epoch: 2 acc: 0.9822, best acc is 0.9822
+epoch: 2 acc: 0.9822, best acc is 0.9822
+epoch: 2 acc: 0.9822, best acc is 0.9822
+epoch: 2 acc: 0.9822, best acc is 0.9822
+epoch: 2 acc: 0.9822, best acc is 0.9822
+epoch: 2 acc: 0.9822, best acc is 0.9822
+epoch: 2 acc: 0.9822, best acc is 0.9822
+epoch: 3 step: 390, loss is 0.148136705160141
+epoch time: 307596.502 ms, per step time: 788.709 ms
+set_mempolicy: Operation not permitted
+epoch: 3 step: 390, loss is 1.587965965270996
+epoch time: 307435.785 ms, per step time: 788.297 ms
+set_mempolicy: Operation not permitted
+epoch: 3 step: 390, loss is 0.10158573091030121
+epoch time: 302017.590 ms, per step time: 774.404 ms
+set_mempolicy: Operation not permitted
+epoch: 3 step: 390, loss is 1.4781529903411865
+epoch time: 308007.887 ms, per step time: 789.764 ms
+set_mempolicy: Operation not permitted
+epoch: 3 step: 390, loss is 0.07077901065349579
+epoch time: 308692.781 ms, per step time: 791.520 ms
+set_mempolicy: Operation not permitted
+epoch: 3 step: 390, loss is 0.050383079797029495
+epoch time: 302767.965 ms, per step time: 776.328 ms
+set_mempolicy: Operation not permitted
+epoch: 3 step: 390, loss is 0.07697375118732452
+epoch time: 308838.826 ms, per step time: 791.894 ms
+set_mempolicy: Operation not permitted
+epoch: 3 step: 390, loss is 0.4908486008644104
+epoch time: 312144.374 ms, per step time: 800.370 ms
+set_mempolicy: Operation not permitted
+epoch: 3 acc: 0.983, best acc is 0.983
+epoch: 3 acc: 0.983, best acc is 0.983
+epoch: 3 acc: 0.983, best acc is 0.983
+epoch: 3 acc: 0.983, best acc is 0.983
+epoch: 3 acc: 0.983, best acc is 0.983
+epoch: 3 acc: 0.983, best acc is 0.983
+epoch: 3 acc: 0.983, best acc is 0.983
+epoch: 3 acc: 0.983, best acc is 0.983
+epoch: 4 step: 390, loss is 2.089712142944336
+epoch time: 302168.271 ms, per step time: 774.790 ms
+epoch: 4 step: 390, loss is 0.041038304567337036
+epoch time: 302393.269 ms, per step time: 775.367 ms
+epoch: 4 step: 390, loss is 0.08861254900693893
+epoch time: 302822.864 ms, per step time: 776.469 ms
+epoch: 4 step: 390, loss is 0.32185789942741394
+epoch time: 298613.636 ms, per step time: 765.676 ms
+epoch: 4 step: 390, loss is 0.16099655628204346
+epoch time: 302192.196 ms, per step time: 774.852 ms
+epoch: 4 step: 390, loss is 0.1132066622376442
+epoch time: 302684.753 ms, per step time: 776.115 ms
+epoch: 4 step: 390, loss is 1.492279052734375
+epoch time: 303314.247 ms, per step time: 777.729 ms
+epoch: 4 step: 390, loss is 0.3618273437023163
+epoch time: 299412.775 ms, per step time: 767.725 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 4 acc: 0.9809, best acc is 0.983
+epoch: 4 acc: 0.9809, best acc is 0.983
+epoch: 4 acc: 0.9809, best acc is 0.983
+epoch: 4 acc: 0.9809, best acc is 0.983
+epoch: 4 acc: 0.9809, best acc is 0.983
+epoch: 4 acc: 0.9809, best acc is 0.983
+epoch: 4 acc: 0.9809, best acc is 0.983
+epoch: 4 acc: 0.9809, best acc is 0.983
+epoch: 5 step: 390, loss is 0.054591499269008636
+epoch time: 300065.047 ms, per step time: 769.398 ms
+set_mempolicy: Operation not permitted
+epoch: 5 step: 390, loss is 0.06133800372481346
+epoch time: 300509.553 ms, per step time: 770.537 ms
+set_mempolicy: Operation not permitted
+epoch: 5 step: 390, loss is 0.04780247062444687
+epoch time: 300863.233 ms, per step time: 771.444 ms
+set_mempolicy: Operation not permitted
+epoch: 5 step: 390, loss is 0.03462633490562439
+epoch time: 301014.633 ms, per step time: 771.832 ms
+set_mempolicy: Operation not permitted
+epoch: 5 step: 390, loss is 0.03875892609357834
+epoch time: 300888.688 ms, per step time: 771.509 ms
+set_mempolicy: Operation not permitted
+epoch: 5 step: 390, loss is 0.15916560590267181
+epoch time: 301057.626 ms, per step time: 771.943 ms
+epoch: 5 step: 390, loss is 0.05260156840085983
+epoch time: 300874.128 ms, per step time: 771.472 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 5 step: 390, loss is 0.07900258153676987
+epoch time: 301568.903 ms, per step time: 773.254 ms
+set_mempolicy: Operation not permitted
+epoch: 5 acc: 0.9798, best acc is 0.983
+epoch: 5 acc: 0.9798, best acc is 0.983
+epoch: 5 acc: 0.9798, best acc is 0.983
+epoch: 5 acc: 0.9798, best acc is 0.983
+epoch: 5 acc: 0.9798, best acc is 0.983
+epoch: 5 acc: 0.9798, best acc is 0.983
+epoch: 5 acc: 0.9798, best acc is 0.983
+epoch: 5 acc: 0.9798, best acc is 0.983
+epoch: 6 step: 390, loss is 0.37978866696357727
+epoch time: 297939.877 ms, per step time: 763.948 ms
+epoch: 6 step: 390, loss is 1.3301805257797241
+epoch time: 299379.233 ms, per step time: 767.639 ms
+epoch: 6 step: 390, loss is 1.4437124729156494
+epoch time: 298247.150 ms, per step time: 764.736 ms
+epoch: 6 step: 390, loss is 0.3707754611968994
+epoch time: 299717.682 ms, per step time: 768.507 ms
+epoch: 6 step: 390, loss is 0.043431606143713
+epoch time: 299021.087 ms, per step time: 766.721 ms
+epoch: 6 step: 390, loss is 0.19102081656455994
+epoch time: 299639.335 ms, per step time: 768.306 ms
+epoch: 6 step: 390, loss is 0.3385637402534485
+epoch time: 299173.136 ms, per step time: 767.111 ms
+epoch: 6 step: 390, loss is 0.08915148675441742
+epoch time: 300412.802 ms, per step time: 770.289 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 6 acc: 0.9804, best acc is 0.983
+epoch: 6 acc: 0.9804, best acc is 0.983
+epoch: 6 acc: 0.9804, best acc is 0.983
+epoch: 6 acc: 0.9804, best acc is 0.983
+epoch: 6 acc: 0.9804, best acc is 0.983
+epoch: 6 acc: 0.9804, best acc is 0.983
+epoch: 6 acc: 0.9804, best acc is 0.983
+epoch: 6 acc: 0.9804, best acc is 0.983
+epoch: 7 step: 390, loss is 0.15198858082294464
+epoch time: 299550.447 ms, per step time: 768.078 ms
+set_mempolicy: Operation not permitted
+epoch: 7 step: 390, loss is 0.13055256009101868
+epoch time: 299978.483 ms, per step time: 769.176 ms
+set_mempolicy: Operation not permitted
+epoch: 7 step: 390, loss is 0.10762090981006622
+epoch time: 300914.647 ms, per step time: 771.576 ms
+set_mempolicy: Operation not permitted
+epoch: 7 step: 390, loss is 0.6998233795166016
+epoch time: 300916.435 ms, per step time: 771.581 ms
+epoch: 7 step: 390, loss is 0.06245673447847366
+epoch time: 301371.243 ms, per step time: 772.747 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 7 step: 390, loss is 0.18158754706382751
+epoch time: 301274.841 ms, per step time: 772.500 ms
+set_mempolicy: Operation not permitted
+epoch: 7 step: 390, loss is 0.08210323750972748
+epoch time: 301507.542 ms, per step time: 773.096 ms
+set_mempolicy: Operation not permitted
+epoch: 7 step: 390, loss is 0.6552519202232361
+epoch time: 302115.472 ms, per step time: 774.655 ms
+set_mempolicy: Operation not permitted
+epoch: 7 acc: 0.9799, best acc is 0.983
+epoch: 7 acc: 0.9799, best acc is 0.983
+epoch: 7 acc: 0.9799, best acc is 0.983
+epoch: 7 acc: 0.9799, best acc is 0.983
+epoch: 7 acc: 0.9799, best acc is 0.983
+epoch: 7 acc: 0.9799, best acc is 0.983
+epoch: 7 acc: 0.9799, best acc is 0.983
+epoch: 7 acc: 0.9799, best acc is 0.983
+epoch: 8 step: 390, loss is 1.2837798595428467
+epoch time: 299491.057 ms, per step time: 767.926 ms
+epoch: 8 step: 390, loss is 1.7104010581970215
+epoch time: 299093.822 ms, per step time: 766.907 ms
+epoch: 8 step: 390, loss is 0.20436140894889832
+epoch time: 298568.334 ms, per step time: 765.560 ms
+epoch: 8 step: 390, loss is 1.3893852233886719
+epoch time: 298763.588 ms, per step time: 766.060 ms
+epoch: 8 step: 390, loss is 0.21942254900932312
+epoch time: 299552.914 ms, per step time: 768.084 ms
+epoch: 8 step: 390, loss is 1.3180742263793945
+epoch time: 299437.185 ms, per step time: 767.788 ms
+epoch: 8 step: 390, loss is 1.4779791831970215
+epoch time: 299953.560 ms, per step time: 769.112 ms
+epoch: 8 step: 390, loss is 0.8640066385269165
+epoch time: 298829.036 ms, per step time: 766.228 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 8 acc: 0.9837, best acc is 0.9837
+epoch: 8 acc: 0.9837, best acc is 0.9837
+epoch: 8 acc: 0.9837, best acc is 0.9837
+epoch: 8 acc: 0.9837, best acc is 0.9837
+epoch: 8 acc: 0.9837, best acc is 0.9837
+epoch: 8 acc: 0.9837, best acc is 0.9837
+epoch: 8 acc: 0.9837, best acc is 0.9837
+epoch: 8 acc: 0.9837, best acc is 0.9837
+epoch: 9 step: 390, loss is 0.038406193256378174
+epoch time: 300254.834 ms, per step time: 769.884 ms
+set_mempolicy: Operation not permitted
+epoch: 9 step: 390, loss is 0.04237592965364456
+epoch time: 300573.805 ms, per step time: 770.702 ms
+set_mempolicy: Operation not permitted
+epoch: 9 step: 390, loss is 0.5513951778411865
+epoch time: 301141.404 ms, per step time: 772.157 ms
+set_mempolicy: Operation not permitted
+epoch: 9 step: 390, loss is 0.053558383136987686
+epoch time: 301390.567 ms, per step time: 772.796 ms
+epoch: 9 step: 390, loss is 0.9924495816230774
+epoch time: 301165.072 ms, per step time: 772.218 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 9 step: 390, loss is 0.6807163953781128
+epoch time: 301488.595 ms, per step time: 773.048 ms
+set_mempolicy: Operation not permitted
+epoch: 9 step: 390, loss is 0.3289601802825928
+epoch time: 301914.993 ms, per step time: 774.141 ms
+set_mempolicy: Operation not permitted
+epoch: 9 step: 390, loss is 0.05550216883420944
+epoch time: 302119.101 ms, per step time: 774.664 ms
+set_mempolicy: Operation not permitted
+epoch: 9 acc: 0.9856, best acc is 0.9856
+epoch: 9 acc: 0.9856, best acc is 0.9856
+epoch: 9 acc: 0.9856, best acc is 0.9856
+epoch: 9 acc: 0.9856, best acc is 0.9856
+epoch: 9 acc: 0.9856, best acc is 0.9856
+epoch: 9 acc: 0.9856, best acc is 0.9856
+epoch: 9 acc: 0.9856, best acc is 0.9856
+epoch: 9 acc: 0.9856, best acc is 0.9856
+epoch: 10 step: 390, loss is 0.2528828978538513
+epoch time: 298062.357 ms, per step time: 764.262 ms
+epoch: 10 step: 390, loss is 0.05978934466838837
+epoch time: 299352.101 ms, per step time: 767.569 ms
+epoch: 10 step: 390, loss is 0.054261159151792526
+epoch time: 299985.220 ms, per step time: 769.193 ms
+epoch: 10 step: 390, loss is 0.06651526689529419
+epoch time: 298874.910 ms, per step time: 766.346 ms
+epoch: 10 step: 390, loss is 0.061038412153720856
+epoch time: 300362.652 ms, per step time: 770.161 ms
+epoch: 10 step: 390, loss is 0.0647759735584259
+epoch time: 299389.764 ms, per step time: 767.666 ms
+epoch: 10 step: 390, loss is 0.23250362277030945
+epoch time: 299861.388 ms, per step time: 768.875 ms
+epoch: 10 step: 390, loss is 1.3978981971740723
+epoch time: 299236.938 ms, per step time: 767.274 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 10 acc: 0.9857, best acc is 0.9857
+epoch: 10 acc: 0.9857, best acc is 0.9857
+epoch: 10 acc: 0.9857, best acc is 0.9857
+epoch: 10 acc: 0.9857, best acc is 0.9857
+epoch: 10 acc: 0.9857, best acc is 0.9857
+epoch: 10 acc: 0.9857, best acc is 0.9857
+epoch: 10 acc: 0.9857, best acc is 0.9857
+epoch: 10 acc: 0.9857, best acc is 0.9857
+epoch: 11 step: 390, loss is 0.049907028675079346
+epoch time: 299862.143 ms, per step time: 768.877 ms
+set_mempolicy: Operation not permitted
+epoch: 11 step: 390, loss is 0.0628797709941864
+epoch time: 300623.744 ms, per step time: 770.830 ms
+set_mempolicy: Operation not permitted
+epoch: 11 step: 390, loss is 0.043388597667217255
+epoch time: 300770.567 ms, per step time: 771.207 ms
+set_mempolicy: Operation not permitted
+epoch: 11 step: 390, loss is 0.05425469949841499
+epoch time: 301078.542 ms, per step time: 771.996 ms
+set_mempolicy: Operation not permitted
+epoch: 11 step: 390, loss is 0.03688247874379158
+epoch time: 301299.703 ms, per step time: 772.563 ms
+set_mempolicy: Operation not permitted
+epoch: 11 step: 390, loss is 0.03354121744632721
+epoch time: 301641.651 ms, per step time: 773.440 ms
+epoch: 11 step: 390, loss is 0.04461294412612915
+epoch time: 301668.225 ms, per step time: 773.508 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 11 step: 390, loss is 0.05310894921422005
+epoch time: 302252.026 ms, per step time: 775.005 ms
+set_mempolicy: Operation not permitted
+epoch: 11 acc: 0.9858, best acc is 0.9858
+epoch: 11 acc: 0.9858, best acc is 0.9858
+epoch: 11 acc: 0.9858, best acc is 0.9858
+epoch: 11 acc: 0.9858, best acc is 0.9858
+epoch: 11 acc: 0.9858, best acc is 0.9858
+epoch: 11 acc: 0.9858, best acc is 0.9858
+epoch: 11 acc: 0.9858, best acc is 0.9858
+epoch: 11 acc: 0.9858, best acc is 0.9858
+epoch: 12 step: 390, loss is 0.16325260698795319
+epoch time: 298181.823 ms, per step time: 764.569 ms
+epoch: 12 step: 390, loss is 0.33475327491760254
+epoch time: 299198.882 ms, per step time: 767.177 ms
+epoch: 12 step: 390, loss is 0.12313245981931686
+epoch time: 300483.499 ms, per step time: 770.471 ms
+epoch: 12 step: 390, loss is 0.10777813196182251
+epoch time: 299988.727 ms, per step time: 769.202 ms
+epoch: 12 step: 390, loss is 1.643567681312561
+epoch time: 299961.175 ms, per step time: 769.131 ms
+epoch: 12 step: 390, loss is 0.3816750645637512
+epoch time: 300363.634 ms, per step time: 770.163 ms
+epoch: 12 step: 390, loss is 0.750409722328186
+epoch time: 299881.114 ms, per step time: 768.926 ms
+epoch: 12 step: 390, loss is 0.12080357223749161
+epoch time: 299267.619 ms, per step time: 767.353 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 12 acc: 0.9859, best acc is 0.9859
+epoch: 12 acc: 0.9859, best acc is 0.9859
+epoch: 12 acc: 0.9859, best acc is 0.9859
+epoch: 12 acc: 0.9859, best acc is 0.9859
+epoch: 12 acc: 0.9859, best acc is 0.9859
+epoch: 12 acc: 0.9859, best acc is 0.9859
+epoch: 12 acc: 0.9859, best acc is 0.9859
+epoch: 12 acc: 0.9859, best acc is 0.9859
+epoch: 13 step: 390, loss is 0.29150962829589844
+epoch time: 300209.252 ms, per step time: 769.767 ms
+set_mempolicy: Operation not permitted
+epoch: 13 step: 390, loss is 0.0800895020365715
+epoch time: 301108.541 ms, per step time: 772.073 ms
+epoch: 13 step: 390, loss is 0.08501731604337692
+epoch time: 300693.980 ms, per step time: 771.010 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 13 step: 390, loss is 0.07677645236253738
+epoch time: 300842.274 ms, per step time: 771.390 ms
+set_mempolicy: Operation not permitted
+epoch: 13 step: 390, loss is 0.04384114593267441
+epoch time: 301228.578 ms, per step time: 772.381 ms
+set_mempolicy: Operation not permitted
+epoch: 13 step: 390, loss is 0.07105783373117447
+epoch time: 301862.275 ms, per step time: 774.006 ms
+set_mempolicy: Operation not permitted
+epoch: 13 step: 390, loss is 1.1227476596832275
+epoch time: 302016.893 ms, per step time: 774.402 ms
+set_mempolicy: Operation not permitted
+epoch: 13 step: 390, loss is 0.0727292150259018
+epoch time: 302188.092 ms, per step time: 774.841 ms
+set_mempolicy: Operation not permitted
+epoch: 13 acc: 0.9869, best acc is 0.9869
+epoch: 13 acc: 0.9869, best acc is 0.9869
+epoch: 13 acc: 0.9869, best acc is 0.9869
+epoch: 13 acc: 0.9869, best acc is 0.9869
+epoch: 13 acc: 0.9869, best acc is 0.9869
+epoch: 13 acc: 0.9869, best acc is 0.9869
+epoch: 13 acc: 0.9869, best acc is 0.9869
+epoch: 13 acc: 0.9869, best acc is 0.9869
+epoch: 14 step: 390, loss is 0.711018443107605
+epoch time: 298769.638 ms, per step time: 766.076 ms
+epoch: 14 step: 390, loss is 0.11782609671354294
+epoch time: 298203.313 ms, per step time: 764.624 ms
+epoch: 14 step: 390, loss is 0.7803399562835693
+epoch time: 299589.179 ms, per step time: 768.177 ms
+epoch: 14 step: 390, loss is 0.6326938271522522
+epoch time: 298583.369 ms, per step time: 765.598 ms
+epoch: 14 step: 390, loss is 0.7712958455085754
+epoch time: 300335.640 ms, per step time: 770.091 ms
+epoch: 14 step: 390, loss is 0.5723061561584473
+epoch time: 299534.121 ms, per step time: 768.036 ms
+epoch: 14 step: 390, loss is 0.9858806729316711
+epoch time: 300354.546 ms, per step time: 770.140 ms
+epoch: 14 step: 390, loss is 0.38194358348846436
+epoch time: 299184.841 ms, per step time: 767.141 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 14 acc: 0.9852, best acc is 0.9869
+epoch: 14 acc: 0.9852, best acc is 0.9869
+epoch: 14 acc: 0.9852, best acc is 0.9869
+epoch: 14 acc: 0.9852, best acc is 0.9869
+epoch: 14 acc: 0.9852, best acc is 0.9869
+epoch: 14 acc: 0.9852, best acc is 0.9869
+epoch: 14 acc: 0.9852, best acc is 0.9869
+epoch: 14 acc: 0.9852, best acc is 0.9869
+epoch: 15 step: 390, loss is 0.09147940576076508
+epoch time: 302719.546 ms, per step time: 776.204 ms
+set_mempolicy: Operation not permitted
+epoch: 15 step: 390, loss is 0.04131429269909859
+epoch time: 302993.454 ms, per step time: 776.906 ms
+set_mempolicy: Operation not permitted
+epoch: 15 step: 390, loss is 0.10350758582353592
+epoch time: 303825.285 ms, per step time: 779.039 ms
+set_mempolicy: Operation not permitted
+epoch: 15 step: 390, loss is 0.09509702771902084
+epoch time: 303961.128 ms, per step time: 779.388 ms
+epoch: 15 step: 390, loss is 0.05302928388118744
+epoch time: 303466.959 ms, per step time: 778.120 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 15 step: 390, loss is 0.09497831761837006
+epoch time: 304485.403 ms, per step time: 780.732 ms
+set_mempolicy: Operation not permitted
+epoch: 15 step: 390, loss is 0.08368997275829315
+epoch time: 304574.180 ms, per step time: 780.959 ms
+set_mempolicy: Operation not permitted
+epoch: 15 step: 390, loss is 0.12225672602653503
+epoch time: 302419.365 ms, per step time: 775.434 ms
+set_mempolicy: Operation not permitted
+epoch: 15 acc: 0.9862, best acc is 0.9869
+epoch: 15 acc: 0.9862, best acc is 0.9869
+epoch: 15 acc: 0.9862, best acc is 0.9869
+epoch: 15 acc: 0.9862, best acc is 0.9869
+epoch: 15 acc: 0.9862, best acc is 0.9869
+epoch: 15 acc: 0.9862, best acc is 0.9869
+epoch: 15 acc: 0.9862, best acc is 0.9869
+epoch: 15 acc: 0.9862, best acc is 0.9869
+epoch: 16 step: 390, loss is 0.0396253764629364
+epoch time: 299340.831 ms, per step time: 767.541 ms
+epoch: 16 step: 390, loss is 0.07334882020950317
+epoch time: 299683.677 ms, per step time: 768.420 ms
+epoch: 16 step: 390, loss is 0.07530056685209274
+epoch time: 298915.848 ms, per step time: 766.451 ms
+epoch: 16 step: 390, loss is 0.08273857086896896
+epoch time: 299567.317 ms, per step time: 768.121 ms
+epoch: 16 step: 390, loss is 0.0769215002655983
+epoch time: 300393.751 ms, per step time: 770.240 ms
+epoch: 16 step: 390, loss is 0.047014959156513214
+epoch time: 300219.496 ms, per step time: 769.794 ms
+epoch: 16 step: 390, loss is 0.08882301300764084
+epoch time: 299943.058 ms, per step time: 769.085 ms
+epoch: 16 step: 390, loss is 0.07277491688728333
+epoch time: 299439.193 ms, per step time: 767.793 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 16 acc: 0.9861, best acc is 0.9869
+epoch: 16 acc: 0.9861, best acc is 0.9869
+epoch: 16 acc: 0.9861, best acc is 0.9869
+epoch: 16 acc: 0.9861, best acc is 0.9869
+epoch: 16 acc: 0.9861, best acc is 0.9869
+epoch: 16 acc: 0.9861, best acc is 0.9869
+epoch: 16 acc: 0.9861, best acc is 0.9869
+epoch: 16 acc: 0.9861, best acc is 0.9869
+epoch: 17 step: 390, loss is 0.07682955265045166
+epoch time: 300183.446 ms, per step time: 769.701 ms
+set_mempolicy: Operation not permitted
+epoch: 17 step: 390, loss is 0.06501968950033188
+epoch time: 300815.559 ms, per step time: 771.322 ms
+set_mempolicy: Operation not permitted
+epoch: 17 step: 390, loss is 0.3227021098136902
+epoch time: 300882.290 ms, per step time: 771.493 ms
+epoch: 17 step: 390, loss is 0.05690588802099228
+epoch time: 301159.616 ms, per step time: 772.204 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 17 step: 390, loss is 0.05246765911579132
+epoch time: 301539.233 ms, per step time: 773.178 ms
+set_mempolicy: Operation not permitted
+epoch: 17 step: 390, loss is 0.7559994459152222
+epoch time: 301480.398 ms, per step time: 773.027 ms
+set_mempolicy: Operation not permitted
+epoch: 17 step: 390, loss is 0.04649461805820465
+epoch time: 301993.682 ms, per step time: 774.343 ms
+set_mempolicy: Operation not permitted
+epoch: 17 step: 390, loss is 0.9874241352081299
+epoch time: 302348.220 ms, per step time: 775.252 ms
+set_mempolicy: Operation not permitted
+epoch: 17 acc: 0.9862, best acc is 0.9869
+epoch: 17 acc: 0.9862, best acc is 0.9869
+epoch: 17 acc: 0.9862, best acc is 0.9869
+epoch: 17 acc: 0.9862, best acc is 0.9869
+epoch: 17 acc: 0.9862, best acc is 0.9869
+epoch: 17 acc: 0.9862, best acc is 0.9869
+epoch: 17 acc: 0.9862, best acc is 0.9869
+epoch: 17 acc: 0.9862, best acc is 0.9869
+epoch: 18 step: 390, loss is 0.055350981652736664
+epoch time: 299458.252 ms, per step time: 767.842 ms
+epoch: 18 step: 390, loss is 0.05720493942499161
+epoch time: 300003.566 ms, per step time: 769.240 ms
+epoch: 18 step: 390, loss is 0.06787765026092529
+epoch time: 298840.315 ms, per step time: 766.257 ms
+epoch: 18 step: 390, loss is 0.054558973759412766
+epoch time: 299357.955 ms, per step time: 767.584 ms
+epoch: 18 step: 390, loss is 0.05600669980049133
+epoch time: 299860.653 ms, per step time: 768.873 ms
+epoch: 18 step: 390, loss is 0.0382518470287323
+epoch time: 300074.891 ms, per step time: 769.423 ms
+epoch: 18 step: 390, loss is 0.0604248084127903
+epoch time: 299774.466 ms, per step time: 768.652 ms
+epoch: 18 step: 390, loss is 0.07385193556547165
+epoch time: 299514.243 ms, per step time: 767.985 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 18 acc: 0.9859, best acc is 0.9869
+epoch: 18 acc: 0.9859, best acc is 0.9869
+epoch: 18 acc: 0.9859, best acc is 0.9869
+epoch: 18 acc: 0.9859, best acc is 0.9869
+epoch: 18 acc: 0.9859, best acc is 0.9869
+epoch: 18 acc: 0.9859, best acc is 0.9869
+epoch: 18 acc: 0.9859, best acc is 0.9869
+epoch: 18 acc: 0.9859, best acc is 0.9869
+epoch: 19 step: 390, loss is 0.06284448504447937
+epoch time: 300584.484 ms, per step time: 770.729 ms
+set_mempolicy: Operation not permitted
+epoch: 19 step: 390, loss is 0.3196127712726593
+epoch time: 301152.345 ms, per step time: 772.185 ms
+set_mempolicy: Operation not permitted
+epoch: 19 step: 390, loss is 0.05032820254564285
+epoch time: 301025.755 ms, per step time: 771.861 ms
+set_mempolicy: Operation not permitted
+epoch: 19 step: 390, loss is 0.10951916128396988
+epoch time: 300864.158 ms, per step time: 771.447 ms
+set_mempolicy: Operation not permitted
+epoch: 19 step: 390, loss is 0.055704765021800995
+epoch time: 301399.134 ms, per step time: 772.818 ms
+epoch: 19 step: 390, loss is 0.09697496891021729
+epoch time: 301388.540 ms, per step time: 772.791 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 19 step: 390, loss is 0.2881447672843933
+epoch time: 301574.267 ms, per step time: 773.267 ms
+set_mempolicy: Operation not permitted
+epoch: 19 step: 390, loss is 0.09883998334407806
+epoch time: 302010.462 ms, per step time: 774.386 ms
+set_mempolicy: Operation not permitted
+epoch: 19 acc: 0.9862, best acc is 0.9869
+epoch: 19 acc: 0.9862, best acc is 0.9869
+epoch: 19 acc: 0.9862, best acc is 0.9869
+epoch: 19 acc: 0.9862, best acc is 0.9869
+epoch: 19 acc: 0.9862, best acc is 0.9869
+epoch: 19 acc: 0.9862, best acc is 0.9869
+epoch: 19 acc: 0.9862, best acc is 0.9869
+epoch: 19 acc: 0.9862, best acc is 0.9869
+epoch: 20 step: 390, loss is 1.0064966678619385
+epoch time: 298659.406 ms, per step time: 765.793 ms
+epoch: 20 step: 390, loss is 0.045134589076042175
+epoch time: 298764.781 ms, per step time: 766.064 ms
+epoch: 20 step: 390, loss is 0.06289136409759521
+epoch time: 298334.537 ms, per step time: 764.960 ms
+epoch: 20 step: 390, loss is 0.1352657973766327
+epoch time: 299186.032 ms, per step time: 767.144 ms
+epoch: 20 step: 390, loss is 0.3513251543045044
+epoch time: 300053.696 ms, per step time: 769.368 ms
+epoch: 20 step: 390, loss is 0.05126398801803589
+epoch time: 299628.409 ms, per step time: 768.278 ms
+epoch: 20 step: 390, loss is 0.05938003212213516
+epoch time: 299838.989 ms, per step time: 768.818 ms
+epoch: 20 step: 390, loss is 0.04768356680870056
+epoch time: 299548.683 ms, per step time: 768.074 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 20 acc: 0.9862, best acc is 0.9869
+epoch: 20 acc: 0.9862, best acc is 0.9869
+epoch: 20 acc: 0.9862, best acc is 0.9869
+epoch: 20 acc: 0.9862, best acc is 0.9869
+epoch: 20 acc: 0.9862, best acc is 0.9869
+epoch: 20 acc: 0.9862, best acc is 0.9869
+epoch: 20 acc: 0.9862, best acc is 0.9869
+epoch: 20 acc: 0.9862, best acc is 0.9869
+epoch: 21 step: 390, loss is 0.5759643316268921
+epoch time: 300477.911 ms, per step time: 770.456 ms
+set_mempolicy: Operation not permitted
+epoch: 21 step: 390, loss is 0.11786700785160065
+epoch time: 301093.457 ms, per step time: 772.035 ms
+set_mempolicy: Operation not permitted
+epoch: 21 step: 390, loss is 0.5444133281707764
+epoch time: 300869.441 ms, per step time: 771.460 ms
+set_mempolicy: Operation not permitted
+epoch: 21 step: 390, loss is 0.5244545340538025
+epoch time: 301094.172 ms, per step time: 772.036 ms
+set_mempolicy: Operation not permitted
+epoch: 21 step: 390, loss is 0.5789451599121094
+epoch time: 301439.443 ms, per step time: 772.922 ms
+set_mempolicy: Operation not permitted
+epoch: 21 step: 390, loss is 0.0839061513543129
+epoch time: 301942.204 ms, per step time: 774.211 ms
+set_mempolicy: Operation not permitted
+epoch: 21 step: 390, loss is 0.6129226684570312
+epoch time: 301779.017 ms, per step time: 773.792 ms
+set_mempolicy: Operation not permitted
+epoch: 21 step: 390, loss is 0.43984344601631165
+epoch time: 302150.498 ms, per step time: 774.745 ms
+set_mempolicy: Operation not permitted
+epoch: 21 acc: 0.9859, best acc is 0.9869
+epoch: 21 acc: 0.9859, best acc is 0.9869
+epoch: 21 acc: 0.9859, best acc is 0.9869
+epoch: 21 acc: 0.9859, best acc is 0.9869
+epoch: 21 acc: 0.9859, best acc is 0.9869
+epoch: 21 acc: 0.9859, best acc is 0.9869
+epoch: 21 acc: 0.9859, best acc is 0.9869
+epoch: 21 acc: 0.9859, best acc is 0.9869
+epoch: 22 step: 390, loss is 0.06318078935146332
+epoch time: 298320.265 ms, per step time: 764.924 ms
+epoch: 22 step: 390, loss is 0.0589667372405529
+epoch time: 297942.034 ms, per step time: 763.954 ms
+epoch: 22 step: 390, loss is 0.0529370978474617
+epoch time: 299710.165 ms, per step time: 768.488 ms
+epoch: 22 step: 390, loss is 0.058754853904247284
+epoch time: 299493.474 ms, per step time: 767.932 ms
+epoch: 22 step: 390, loss is 0.05906398594379425
+epoch time: 299640.007 ms, per step time: 768.308 ms
+epoch: 22 step: 390, loss is 0.06110777705907822
+epoch time: 299087.441 ms, per step time: 766.891 ms
+epoch: 22 step: 390, loss is 0.08054062724113464
+epoch time: 299245.374 ms, per step time: 767.296 ms
+epoch: 22 step: 390, loss is 0.06479597091674805
+epoch time: 299178.057 ms, per step time: 767.123 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 22 acc: 0.9859, best acc is 0.9869
+epoch: 22 acc: 0.9859, best acc is 0.9869
+epoch: 22 acc: 0.9859, best acc is 0.9869
+epoch: 22 acc: 0.9859, best acc is 0.9869
+epoch: 22 acc: 0.9859, best acc is 0.9869
+epoch: 22 acc: 0.9859, best acc is 0.9869
+epoch: 22 acc: 0.9859, best acc is 0.9869
+epoch: 22 acc: 0.9859, best acc is 0.9869
+epoch: 23 step: 390, loss is 0.054569095373153687
+epoch time: 299974.658 ms, per step time: 769.166 ms
+set_mempolicy: Operation not permitted
+epoch: 23 step: 390, loss is 0.0742931067943573
+epoch time: 300260.079 ms, per step time: 769.898 ms
+set_mempolicy: Operation not permitted
+epoch: 23 step: 390, loss is 0.1628040075302124
+epoch time: 300859.913 ms, per step time: 771.436 ms
+set_mempolicy: Operation not permitted
+epoch: 23 step: 390, loss is 0.2334059178829193
+epoch time: 301321.888 ms, per step time: 772.620 ms
+epoch: 23 step: 390, loss is 0.1698746681213379
+epoch time: 301468.483 ms, per step time: 772.996 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 23 step: 390, loss is 0.8889416456222534
+epoch time: 301694.737 ms, per step time: 773.576 ms
+set_mempolicy: Operation not permitted
+epoch: 23 step: 390, loss is 0.06515388190746307
+epoch time: 302412.121 ms, per step time: 775.416 ms
+set_mempolicy: Operation not permitted
+epoch: 23 step: 390, loss is 0.06689010560512543
+epoch time: 302150.265 ms, per step time: 774.744 ms
+set_mempolicy: Operation not permitted
+epoch: 23 acc: 0.986, best acc is 0.9869
+epoch: 23 acc: 0.986, best acc is 0.9869
+epoch: 23 acc: 0.986, best acc is 0.9869
+epoch: 23 acc: 0.986, best acc is 0.9869
+epoch: 23 acc: 0.986, best acc is 0.9869
+epoch: 23 acc: 0.986, best acc is 0.9869
+epoch: 23 acc: 0.986, best acc is 0.9869
+epoch: 23 acc: 0.986, best acc is 0.9869
+epoch: 24 step: 390, loss is 0.049875907599925995
+epoch time: 297792.881 ms, per step time: 763.571 ms
+epoch: 24 step: 390, loss is 0.683893620967865
+epoch time: 298601.818 ms, per step time: 765.646 ms
+epoch: 24 step: 390, loss is 0.8757296800613403
+epoch time: 300226.240 ms, per step time: 769.811 ms
+epoch: 24 step: 390, loss is 0.8411726355552673
+epoch time: 299751.521 ms, per step time: 768.594 ms
+epoch: 24 step: 390, loss is 0.057666096836328506
+epoch time: 300286.443 ms, per step time: 769.965 ms
+epoch: 24 step: 390, loss is 0.14800679683685303
+epoch time: 299557.712 ms, per step time: 768.097 ms
+epoch: 24 step: 390, loss is 0.8942495584487915
+epoch time: 299901.636 ms, per step time: 768.979 ms
+epoch: 24 step: 390, loss is 0.046135954558849335
+epoch time: 299335.750 ms, per step time: 767.528 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 24 acc: 0.9859, best acc is 0.9869
+epoch: 24 acc: 0.9859, best acc is 0.9869
+epoch: 24 acc: 0.9859, best acc is 0.9869
+epoch: 24 acc: 0.9859, best acc is 0.9869
+epoch: 24 acc: 0.9859, best acc is 0.9869
+epoch: 24 acc: 0.9859, best acc is 0.9869
+epoch: 24 acc: 0.9859, best acc is 0.9869
+epoch: 24 acc: 0.9859, best acc is 0.9869
+epoch: 25 step: 390, loss is 0.08056625723838806
+epoch time: 300706.449 ms, per step time: 771.042 ms
+set_mempolicy: Operation not permitted
+epoch: 25 step: 390, loss is 0.05403142422437668
+epoch time: 300617.302 ms, per step time: 770.814 ms
+set_mempolicy: Operation not permitted
+epoch: 25 step: 390, loss is 0.05528934299945831
+epoch time: 301212.285 ms, per step time: 772.339 ms
+set_mempolicy: Operation not permitted
+epoch: 25 step: 390, loss is 0.2687782049179077
+epoch time: 301252.639 ms, per step time: 772.443 ms
+set_mempolicy: Operation not permitted
+epoch: 25 step: 390, loss is 0.05027000978589058
+epoch time: 302496.688 ms, per step time: 775.633 ms
+set_mempolicy: Operation not permitted
+epoch: 25 step: 390, loss is 0.19000409543514252
+epoch time: 301866.104 ms, per step time: 774.016 ms
+set_mempolicy: Operation not permitted
+epoch: 25 step: 390, loss is 0.04689522832632065
+epoch time: 301972.184 ms, per step time: 774.288 ms
+set_mempolicy: Operation not permitted
+epoch: 25 step: 390, loss is 0.04449906200170517
+epoch time: 302015.167 ms, per step time: 774.398 ms
+set_mempolicy: Operation not permitted
+epoch: 25 acc: 0.9858, best acc is 0.9869
+epoch: 25 acc: 0.9858, best acc is 0.9869
+epoch: 25 acc: 0.9858, best acc is 0.9869
+epoch: 25 acc: 0.9858, best acc is 0.9869
+epoch: 25 acc: 0.9858, best acc is 0.9869
+epoch: 25 acc: 0.9858, best acc is 0.9869
+epoch: 25 acc: 0.9858, best acc is 0.9869
+epoch: 25 acc: 0.9858, best acc is 0.9869
+epoch: 26 step: 390, loss is 0.05654268339276314
+epoch time: 297747.049 ms, per step time: 763.454 ms
+epoch: 26 step: 390, loss is 0.6333258152008057
+epoch time: 299215.536 ms, per step time: 767.219 ms
+epoch: 26 step: 390, loss is 0.05068686977028847
+epoch time: 299754.853 ms, per step time: 768.602 ms
+epoch: 26 step: 390, loss is 0.6054826974868774
+epoch time: 298709.179 ms, per step time: 765.921 ms
+epoch: 26 step: 390, loss is 0.5112101435661316
+epoch time: 299756.759 ms, per step time: 768.607 ms
+epoch: 26 step: 390, loss is 0.04840252548456192
+epoch time: 299368.892 ms, per step time: 767.613 ms
+epoch: 26 step: 390, loss is 0.6360729932785034
+epoch time: 299642.869 ms, per step time: 768.315 ms
+epoch: 26 step: 390, loss is 0.654086709022522
+epoch time: 299426.969 ms, per step time: 767.761 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 26 acc: 0.9859, best acc is 0.9869
+epoch: 26 acc: 0.9859, best acc is 0.9869
+epoch: 26 acc: 0.9859, best acc is 0.9869
+epoch: 26 acc: 0.9859, best acc is 0.9869
+epoch: 26 acc: 0.9859, best acc is 0.9869
+epoch: 26 acc: 0.9859, best acc is 0.9869
+epoch: 26 acc: 0.9859, best acc is 0.9869
+epoch: 26 acc: 0.9859, best acc is 0.9869
+epoch: 27 step: 390, loss is 0.06628640741109848
+epoch time: 301084.899 ms, per step time: 772.013 ms
+epoch: 27 step: 390, loss is 0.5171591639518738
+epoch time: 300915.531 ms, per step time: 771.578 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 27 step: 390, loss is 0.05632505565881729
+epoch time: 301257.240 ms, per step time: 772.454 ms
+set_mempolicy: Operation not permitted
+epoch: 27 step: 390, loss is 0.06839552521705627
+epoch time: 301659.883 ms, per step time: 773.487 ms
+epoch: 27 step: 390, loss is 0.05316822603344917
+epoch time: 301730.113 ms, per step time: 773.667 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 27 step: 390, loss is 0.05128731206059456
+epoch time: 301812.288 ms, per step time: 773.878 ms
+set_mempolicy: Operation not permitted
+epoch: 27 step: 390, loss is 0.08748874813318253
+epoch time: 302375.779 ms, per step time: 775.323 ms
+set_mempolicy: Operation not permitted
+epoch: 27 step: 390, loss is 0.4477849006652832
+epoch time: 302212.130 ms, per step time: 774.903 ms
+set_mempolicy: Operation not permitted
+epoch: 27 acc: 0.986, best acc is 0.9869
+epoch: 27 acc: 0.986, best acc is 0.9869
+epoch: 27 acc: 0.986, best acc is 0.9869
+epoch: 27 acc: 0.986, best acc is 0.9869
+epoch: 27 acc: 0.986, best acc is 0.9869
+epoch: 27 acc: 0.986, best acc is 0.9869
+epoch: 27 acc: 0.986, best acc is 0.9869
+epoch: 27 acc: 0.986, best acc is 0.9869
+epoch: 28 step: 390, loss is 0.05704588443040848
+epoch time: 298615.010 ms, per step time: 765.680 ms
+epoch: 28 step: 390, loss is 0.057897575199604034
+epoch time: 298669.234 ms, per step time: 765.819 ms
+epoch: 28 step: 390, loss is 1.401052474975586
+epoch time: 299189.809 ms, per step time: 767.153 ms
+epoch: 28 step: 390, loss is 0.04926452413201332
+epoch time: 299438.852 ms, per step time: 767.792 ms
+epoch: 28 step: 390, loss is 0.0645032599568367
+epoch time: 298932.067 ms, per step time: 766.492 ms
+epoch: 28 step: 390, loss is 0.07002067565917969
+epoch time: 300346.577 ms, per step time: 770.119 ms
+epoch: 28 step: 390, loss is 1.6375786066055298
+epoch time: 299119.203 ms, per step time: 766.972 ms
+epoch: 28 step: 390, loss is 0.0553058385848999
+epoch time: 299703.472 ms, per step time: 768.470 ms
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+set_mempolicy: Operation not permitted
+epoch: 28 acc: 0.986, best acc is 0.9869
+train success
+epoch: 28 acc: 0.986, best acc is 0.9869
+epoch: 28 acc: 0.986, best acc is 0.9869
+train success
+train success
+epoch: 28 acc: 0.986, best acc is 0.9869
+epoch: 28 acc: 0.986, best acc is 0.9869
+epoch: 28 acc: 0.986, best acc is 0.9869
+train success
+train success
+train success
+epoch: 28 acc: 0.986, best acc is 0.9869
+train success
+epoch: 28 acc: 0.986, best acc is 0.9869
+train success
+
+
+
+
+
+
+
+
+[Modelarts Service Log]2022-07-27 18:39:38,586 - INFO - Begin destroy training processes
+[Modelarts Service Log]2022-07-27 18:39:38,586 - INFO - proc-rank-7-device-7 (pid: 441) has exited
+[Modelarts Service Log]2022-07-27 18:39:38,587 - INFO - proc-rank-6-device-6 (pid: 382) has exited
+[Modelarts Service Log]2022-07-27 18:39:38,587 - INFO - proc-rank-5-device-5 (pid: 374) has exited
+[Modelarts Service Log]2022-07-27 18:39:38,587 - INFO - proc-rank-4-device-4 (pid: 309) has exited
+[Modelarts Service Log]2022-07-27 18:39:38,587 - INFO - proc-rank-3-device-3 (pid: 307) has exited
+[Modelarts Service Log]2022-07-27 18:39:38,587 - INFO - proc-rank-2-device-2 (pid: 305) has exited
+[Modelarts Service Log]2022-07-27 18:39:38,587 - INFO - proc-rank-1-device-1 (pid: 303) has exited
+[Modelarts Service Log]2022-07-27 18:39:38,588 - INFO - proc-rank-0-device-0 (pid: 301) has exited
+[Modelarts Service Log]2022-07-27 18:39:38,588 - INFO - End destroy training processes

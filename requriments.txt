@@ -1,0 +1,1 @@
+!python train.py --config ./src/configs/BiT_M_R50x1.yaml --data_url ../cifar --pretrained ../BiT-M-R50x1.ckpt
